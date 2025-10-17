@@ -31,7 +31,7 @@ async function fetchAllProperties() {
     const data = await res.json();
 
     if (data.length === 0) {
-      break; // ya no hay más páginas
+      break;
     }
 
     allData = allData.concat(data);
